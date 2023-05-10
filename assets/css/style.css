@@ -2,8 +2,8 @@
 
 :root{
     --background-budy: #FFF9E7;
-    --background-nav: #3A53E3;
-    --background-footer: #000000;
+    --background-nav: #6438dd;
+    --background-footer: #;
     --sombra: grey;
 }
 
@@ -77,17 +77,18 @@ nav{
     justify-content: left;
     position: relative;
     align-items: center;
+    color: #224d0e;
 }
 
 .icone{
     width: 5rem;
     display: flex;
-    padding-left: 1rem;
+    padding-left: 1rem;     
 }
 
 .titulo{
     font-family: 'lato', cursive;
-    color: white;
+    color: #e23e88;
     font-size: 1.5rem;
     letter-spacing: 3px;
     font-weight: 800;
@@ -99,7 +100,10 @@ ul{
     display: flex;
     gap: 1rem;
     font-size: 24px;
-    color: var(--white);
+    color: #e23e88;
+}
+#perfil{
+    color: #4f3deb;
 }
 
 main{
@@ -111,10 +115,15 @@ main{
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #F8CD53;
+    
     border-radius: 16px;
     gap: 20px;
-    background-color: white;
+    background-color: #C9EBED;
+    text-align: justify;
+}
+
+.texto_sobre{
+    margin: 1.75rem;
 }
 
 .foto{
@@ -122,12 +131,17 @@ main{
     border-radius: 20px;
     box-shadow: 2px 2px 5px var(--sombra);
 }
-
+#meu_video{
+    margin-bottom: 2rem;
+    color: #4f3deb;
+}
 .video{
     width: 30vw;
     margin: 50px auto;
     align-items: center;
     display: flex;
+    border-radius: 8px;   
+    
 }
 footer{
     width: 80vw;
@@ -143,15 +157,19 @@ footer{
     flex-direction: row;
     justify-content: center;
     cursor: pointer;
+    gap: 1.25rem;
 }
 .ass {
     display: flex;
     padding-top: 0.25rem;
-    color: white;
+    color:#000000;
+    justify-content: last baseline;
+    font-size: 1.25rem;
 }   
 .icons {
     width: 45px;
     padding: 0 0.5rem;
+    margin: 1rem;
 }   
 /*Página de Contato*/
 
@@ -159,17 +177,22 @@ footer{
     display: flex;
     gap: 3rem;
     justify-content: center;
-    padding: 40px
+    padding: 40px;
+    font-family: 'lato', cursive;
+   
 }
 
 .endereco {
     font-family: 'lato', Roboto;
     color: var(--dark-purple);
     font-size: 1rem;
+    
 }
-
-.formulario {
-    width: 50%;
+#formulario_mensagem {
+    width: 60vw;
+}
+#formulario_buscacep {
+    width: 40vw;
 }
 
 /*Estilizar o Formulário*/
@@ -178,6 +201,7 @@ label {
     font-family: 'lato', Roboto;
     margin-left: 1rem;
     font-weight: bold;
+    font-size: 1.15rem;
 }
 
 input,
@@ -207,4 +231,15 @@ button:hover{
 input::placeholder
 textarea::placeholder{
     color: var(--background-nav)
+}
+.campos-form {
+    margin-bottom: 1rem;
+}
+
+#txtNome,
+#txtEmail,
+#txtMensagem,
+#txtCep {
+    font-size: 1rem;
+    padding: 0.25rem 0;
 }
